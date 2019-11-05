@@ -48,11 +48,11 @@ $(".inner").on("click", function() {
 
 $("#groups").on("click", function() {
   $('.inner').empty()
-    let button = $("#groups").text()
-    console.log(button)
+    let punch = $("#groups").text();
+    console.log(punch)
 
 
-    var xhr = $.get(api + query + button + api_key);
+    var xhr = $.get(api + query + punch + api_key);
 
     
     xhr.done(function (response) {
